@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warschau Trip | Detail </title>
+
+    <!-- costum css style -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/css/style1.css">
+    <!-- tab icon -->
+    <link rel="icon" href="/assests/images/logoPng.png">
+    <!-- Leaflet Style -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- scripts - Leaflet-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="/javascript/script_Wetenschapscentrum.js" defer></script> 
+</head>
+<body class="kr-body-container">
+    <header class="kr-headerContainer">
+        <div id="headerLogo">
+            <a href="/index.html"><img src="/assests/images/logoPng.png" alt="Website Logo"></a>
+        </div>      
+        <nav id="headerNav">
+            <a href="/index.html">Home</a>
+            <a href="/trip.html">Trip</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <input type="text" placeholder="Search" id="headerSearch"> 
+    </header>
+    <div class="kr-div-container">
+        <main class="kr-mainTripContainer">
+            <h1 id="headerTitle">Warsaw Trip</h1>
+            <h2>Wetenschapscentrum van Kopernik</h2>
+            <section id="landmarkContainer">
+                <article id="figureContainer">
+                    <img src="/assests/images/bezienswaardigheden_fotos/wetenschapcentrum/Centrum-Nauki-Kopernik_fot.-Centrum-Nauki-Kopernik.jpg" 
+                        alt="Foto uit een dag in het centrum" class="kr-imgDisplayNone">
+                    <img src="/assests/images/bezienswaardigheden_fotos/wetenschapcentrum/Centrum-Nauki-Kopernik-4_fot.-Centrum-Nauki-Kopernik.jpg" 
+                        alt="Foto uit een dag in het centrum" id="imgDisplayNoneOnPhone">
+                    <img src="/assests/images/bezienswaardigheden_fotos/wetenschapcentrum/Centrum-Nauki-Kopernik-2_fot.-Centrum-Nauki-Kopernik.jpg" 
+                        alt="Foto uit een dag in het centrum">
+                    <img src="/assests/images/bezienswaardigheden_fotos/wetenschapcentrum/Centrum-Nauki-Kopernik_fot.-Centrum-Nauki-Kopernik.jpg" 
+                        alt="Foto uit een dag in het centrum" class="kr-imgDisplayNone">
+                </article>
+                <article id="list-container">
+                    <ul>
+                        <li>Wetenschapcentrum is een bewijs dat je plezier kan hebben tijdens het leren.</li>
+                        <li>Een van de grootste toeristische attracties.</li>
+                        <li>Het is zowel voor de volwassen als voor de kinderen.</li>
+                        <li>Werd opgericht in 2005.</li>
+                    </ul>
+                    <div id="likebutton">
+                        <img src="/assests/images/like_icon.png" alt="Het like icon" class="kr-like-image">
+                        <!-- <span>#likes</span> -->
+                    </div>
+                </article>
+            </section>
+            <h2>Regio</h2>
+            <section id="regionSection">
+                <article class="kr-mapArea" id="mapWetenschapcentrum"></article>
+                <article>
+                    <table class="kr-table-design">
+                        <caption>Monumenten om te bezoeken tijdens de wandeling</caption>
+                        <tr>
+                            <th scope="col">Monumenten</th>
+                            <th scope="col">X-Graad</th>
+                            <th scope="col">Y-Graad</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wetenschapcentrum van Kopernik</th> 
+                            <td>52.241933</td>
+                            <td>21.028776</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Discovery Park</th>
+                            <td>52.241</td>
+                            <td>21.030192</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zeemermin van Warsaw</th>
+                            <td>52.240277</td> 
+                            <td>21.031973</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            <h2>Comment Section</h2>
+            <section id="commentSection">
+                <article>
+                    <table class="kr-table-design">
+                        <tr>
+                            <th scope="col" id="commentTitle" colspan="2">Commentaar</th>
+                        </tr>
+                        <tr>
+                            <td class="username">Jane Doe</td>
+                            <td class="comment">The Best</td>
+                        </tr>
+                        <tr>
+                            <td class="username">John Smith</td>
+                            <td class="comment">Amazing Trip</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <form action="#" method="GET" id="commentform">
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Jouw comment"></textarea><br>
+                        <button type="submit">Verzenden</button>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <hr id="footerLine">
+            <p>Copyright &copy; 2020 | U-trip | Warschau Trip</p>
+            <p>Gemaakt door Krystian Rola, Student uit Artesis Plantijn Hogeschool</p>
+        </footer>
+    </div>
+</body>
+</html>

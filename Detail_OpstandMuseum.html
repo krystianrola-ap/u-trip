@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warschau Trip | Detail </title>
+
+    <!-- costum css style -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/css/style1.css">
+    <!-- tab icon -->
+    <link rel="icon" href="/assests/images/logoPng.png">
+    <!-- Leaflet Style -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- scripts - Leaflet-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="/javascript/script_OpstandMuseum.js" defer></script> 
+    
+</head>
+<body class="kr-body-container">
+    <header class="kr-headerContainer">
+        <div id="headerLogo">
+            <a href="/index.html"><img src="/assests/images/logoPng.png" alt="Website Logo"></a>
+        </div>      
+        <nav id="headerNav">
+            <a href="/index.html">Home</a>
+            <a href="/trip.html">Trip</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <input type="text" placeholder="Search" id="headerSearch"> 
+    </header>
+    <div class="kr-div-container">
+        <main class="kr-mainTripContainer">
+            <h1 id="headerTitle">Warsaw Trip</h1>
+            <h2>Museum van Opstand van Warsaw.</h2>
+            <section id="landmarkContainer">
+                <article id="figureContainer">
+                    <img src="/assests/images/bezienswaardigheden_fotos/opstandMuseum/Muzeum-Powstania-Warszawskiego_fot.-m.st_.-Warszawa-4.jpg" 
+                        alt="Foto binnen het Opstand musuem" class="kr-imgDisplayNone">
+                    <img src="/assests/images/bezienswaardigheden_fotos/opstandMuseum/Muzeum-Powstania-Warszawskiego_wejście-do-kanałów_fot.-Muzeum-Powstania-Warszawskiego.jpg" 
+                        alt="Foto binnen het Opstand musuem" id="imgDisplayNoneOnPhone">
+                    <img src="/assests/images/bezienswaardigheden_fotos/opstandMuseum/Muzeum-Powstania-Warszawskiego_fot.-m.st_.-Warszawa-2.jpg" 
+                        alt="Foto binnen het Opstand musuem">
+                    <img src="/assests/images/bezienswaardigheden_fotos/opstandMuseum/Muzeum-Powstania-Warszawskiego_fot.-m.st_.-Warszawa-5.jpg" 
+                        alt="Foto binnen het Opstand musuem" class="kr-imgDisplayNone">
+                </article>
+                <article id="list-container">
+                    <ul>
+                        <li>Geopend in 2004.</li>
+                        <li>Meer dan 30.000 exposities, die voor een groot 
+                            deel overblijfselen zijn van de vechtende opstandelingen. </li>
+                        <li>Elementen van de tentoonstelling met drastische 
+                            scenes zijn gepast gemarkeerd.</li>
+                        <li>Het museum werd geopend ter nagedachtenis  
+                            aan de slachtoffers van de opstand om hun moed en opoffering te herdenken.</li>
+                    </ul>
+                    <div id="likebutton">
+                        <img src="/assests/images/like_icon.png" alt="Het like icon" class="kr-like-image">
+                        <!-- <span>#likes</span> -->
+                    </div>
+                </article>
+            </section>
+            <h2>Regio</h2>
+            <section id="regionSection">
+                <article class="kr-mapArea" id="mapOpstandMuseum"></article>
+                <article>
+                    <table class="kr-table-design">
+                        <caption>Monumenten om te bezoeken tijdens de wandeling</caption>
+                        <tr>
+                            <th scope="col">Monumenten</th>
+                            <th scope="col">X-Graad</th>
+                            <th scope="col">Y-Graad</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Museum van Opstand</th> 
+                            <td>52.23281</td>
+                            <td>20.981011</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Park van Vrijheid</th>
+                            <td>52.231874</td> 
+                            <td>20.981843</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Muur van Herinnering</th>
+                            <td>52.232265</td>  
+                            <td>20.981816</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            <h2>Comment Section</h2>
+            <section id="commentSection">
+                <article>
+                    <table class="kr-table-design">
+                        <tr>
+                            <th scope="col" id="commentTitle" colspan="2">Commentaar</th>
+                        </tr>
+                        <tr>
+                            <td class="username">Jane Doe</td>
+                            <td class="comment">One of the most interesting museums I ever saw!!</td>
+                        </tr>
+                        <tr>
+                            <td class="username">John Smith</td>
+                            <td class="comment">Super cool. Very historical!!!</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <form action="#" method="GET" id="commentform">
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Jouw comment"></textarea><br>
+                        <button type="submit">Verzenden</button>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <hr id="footerLine">
+            <p>Copyright &copy; 2020 | U-trip | Warschau Trip</p>
+            <p>Gemaakt door Krystian Rola, Student uit Artesis Plantijn Hogeschool</p>
+        </footer>
+    </div>
+</body>
+</html>

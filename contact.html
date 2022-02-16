@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warschau Trip | Contact </title>
+
+    <!-- costum css style -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/css/style1.css">
+    <!-- tab icon -->
+    <link rel="icon" href="/assests/images/logoPng.png">
+</head>
+<body class="kr-body-container">
+    <header class="kr-headerContainer">
+        <div id="headerLogo">
+            <a href="/index.html"><img src="/assests/images/logoPng.png" alt="Website Logo"></a>
+        </div>           
+        <nav id="headerNav">
+            <a href="/index.html">Home</a>
+            <a href="/trip.html">Trip</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <input type="text" placeholder="Zoeken ... " id="headerSearch"> 
+    </header>
+    <div class="kr-div-container" id="contact-div-container">
+        <main class="kr-mainTripContainer"> 
+            <h1 id="headerTitle">Warsaw Trip</h1> 
+            <h2>Contact</h2>
+            <section>
+                <form action="#" method="GET" id="formContainer">
+                    <div id="contact_details">
+                        <div>
+                            <label for="name">Voornaam :</label><br>
+                            <input type="text" name="name" placeholder="Voornaam" required>
+                            <br>
+                        </div>
+                        <div>
+                            <label for="prename">Achternaam :</label><br>
+                            <input type="text" name="prename" placeholder="Achternaam" required>
+                              
+                        </div>
+                        <div>
+                            <label for="email">E-Mail :</label><br>
+                            <input type="email" name="email" placeholder="E-Mail" required>
+                            <br> 
+                        </div>
+                        <div>
+                            <label for="contacteer">Contacteer :</label>
+                            <br>
+                            <select name="contactPerson" id="contactPerson" required>
+                                <option value="" disabled selected hidden>Contact nemen met ...</option>
+                                <option value="WEBDEV">Web Developer</option>
+                                <option value="ORG">Organisator</option>
+                            </select> 
+                        </div>
+                    </div>
+                    <div id="comment">
+                        <label for="message">Bericht : </label><br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Geef hier jouw bericht in :"></textarea>
+                    </div>
+                    <button type="submit" value="Verzenden" id="submitFormButton">Verzenden</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <hr id="footerLine">
+            <p>Copyright &copy; 2020 | U-trip | Warschau Trip</p>
+            <p>Gemaakt door Krystian Rola, Student uit Artesis Plantijn Hogeschool</p>
+        </footer>
+    </div>
+</body>
+</html>

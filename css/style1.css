@@ -1,0 +1,703 @@
+*{
+    width: 100%;
+    height: 100%;
+}
+html,
+body{
+    width: 100vw;
+    min-height: 100%;
+    background-color: #181b1f;
+    color: #b3d4fc;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 100%;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    background-color: #1e2f3e;
+}
+#sfeerbeeld{
+    grid-area: sfeerbeeld;
+}
+h1, h2, h3{
+    height: auto;
+    text-align: center;
+    font-family: "Lobster", 'Lucida Sans', Geneva, sans-serif;
+}
+h2{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-top: 1px solid #929a9e;
+    border-bottom: 1px solid #929a9e ;
+    margin: 2px 0;
+}
+h3{
+    width: 100%;
+    padding: 5px;
+}
+img{
+    padding: 2px;
+    border: 1px solid #929a9e ;        ;
+    border-radius: 2px;
+}
+abbr{
+    text-decoration: none;
+}
+.kr-div-container{
+    grid-area: div-container;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+/* the template area positions the elements in the body which 
+are the 'header' and 'div-container' */
+.kr-body-container{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "div-container";
+}
+
+/* grid-template-area positions the elements inside the div container, 
+containing 'sfeerbeeld', 'main' and 'footer' */
+.kr-div-container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    /* grid-template-areas for elements inside the div-container */
+    grid-template-areas: 
+    "sfeerbeeld"
+    "main"
+    "footer";
+}
+
+/* ---------- header ---------- */
+    .kr-headerContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    #headerLogo{
+        width: fit-content;
+        flex-grow: 1;
+        display: inline-block;
+        height: fit-content; 
+    }
+    #headerLogo>a>img{
+        border:none;
+    }
+    #headerNav{
+        flex-grow: 2;
+        width: 70%;
+        height: auto;
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        display: inline-block;
+    }
+    #headerNav>a{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+        font-size: 4%;
+        padding: 0 .5rem;
+        text-decoration: none;
+        color: inherit;
+    }
+    #headerSearch{
+        flex-grow: 1;
+        margin: auto 0 0 0;
+        padding: 2px;
+        text-align: center;
+        width: 15%;
+        height: 50%;
+        font-size: 1rem;
+    }
+
+/* ---------- sfeerbeeld ---------- */
+    #sfeerbeeld{
+        width: 98%;
+        height: auto;
+        padding: 1% 0 0 0 ;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #sfeerbeeld>img{
+        width: 98%;
+        margin: auto;
+        border: none;
+    }
+
+/* ---------- Home ---------- */
+    main, main>section, main>section>article{
+        display: flex;
+        flex-direction: column;   
+    }
+    #imagesTripBeschrijving{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #imagesTripBeschrijving>img{
+        width: 45%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    p{
+        width: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: justify;
+        padding: 1% 3% ;
+        margin: 0;
+    }
+    #creatorImg{
+        width: 98%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    #creatorImg>img{
+        width: 65%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto ;
+    }
+    
+/* ---------- Trip ---------- */
+    h3>a{
+        width: fit-content;
+        height: fit-content;
+    }
+    .kr-mainTripContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    #tripContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    #tripContainer>section{
+        border: 1px solid #929a9e;
+        margin: 1px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #tripContainer>section>div{
+        display: flex;
+        flex-direction: row;
+    }
+    .kr-tripParagraphs{
+        padding: 0 2% 0 2%;
+    }
+    figure{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: auto 0;
+    }
+    #tripContainer>section>div>figure>img{
+        width: 70%;
+        height: auto;
+    }
+    figcaption{
+        width: 100%;
+        height: fit-content;
+        font-size: 11px;
+    }
+
+/* ---------- Contact ---------- */
+    #contact-div-container{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+        "main"
+        "footer";
+    }
+    label{
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    #formContainer{
+        width: 50%;
+        margin: auto;
+        padding: 2px;
+        border: 1px solid #929a9e;
+        border-radius: 2px;
+    }
+    #formContainer, #contact_details{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact_details{
+        height: au;
+    }
+    #contact_details>div{
+        margin: 2px;
+        padding: 0;
+    }
+    #comment{
+        width: 100%;
+        height: auto;
+    }
+    #submitFormButton{
+        width: 100%;
+        margin: 2px;
+        height: 100%;
+    }
+    #comment>textarea{
+        width: 100%;
+        height: auto;
+        resize: none;
+    }
+
+/* ---------- Detail 1-6 : basic layout ----------  */
+    .kr-mainTripContainer>section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;  
+    }
+    .kr-mainTripContainer>section>article{
+        width: 50%;
+        margin: auto;
+        height: fit-content;
+    }
+    #landmarkContainer{
+        width: fit-content;
+        display: flex;
+        flex-direction: row; 
+    }
+    .kr-mapArea{
+        width: 100%;
+        border: 2px solid #929a9e;
+        min-height: 400px;
+    }
+    #figureContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #figureContainer>img{
+        width: 45%;
+        height: auto;
+        min-width: 200px;
+        margin: 2px;
+    }
+    #list-container{
+        padding: 2px;
+    }
+    #landmarkContainer>article>ul{
+        padding: 2px;
+        line-height: 2rem;
+        list-style-position: inside;
+        list-style-type: circle;
+    }
+    #landmarkContainer>article>ul>li{
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+    #landmarkContainer>article>ul>li:hover{
+        list-style-type: disc;
+    }
+    /* -- table design -- */
+    .kr-table-design{
+        width: 100%;
+        height: fit-content;
+        border-collapse: separate;
+    }
+    .kr-table-design th{
+        background-color: #011f4b;
+    }
+    .kr-table-design th, 
+    .kr-table-design td{
+        border: 1px solid #929a9e;
+        text-align: left;
+        padding: 5px;
+        height: 45px;
+    }
+    .kr-table-design td{
+        color: black;
+        width: fit-content;
+    }
+    .kr-table-design tr:nth-child(even){
+        background-color: #6497b1;
+    }
+    .kr-table-design tr:nth-child(odd){
+        background-color: #b3cde0;
+    }
+    .kr-table-design tr:hover {
+        background-color: #005b96;
+        padding: 8px;
+    }
+    .kr-table-design tr:hover th,
+    .kr-table-design tr:hover td{
+        height: 55px;
+    }
+    .kr-like-image{
+        border: none;
+    }
+
+
+/* ---------- footer ---------- */
+    #footerLine{
+        
+        border: 0;
+        height: 1px;
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    }
+    footer{
+        max-width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    footer>p{
+        height: auto;
+        text-align: center;
+    }
+
+/* ------------------------------------------------ Media Queries ------------------------------------------------ */
+/* phone media query to a max width of 480px */
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 48px;
+    }
+    header{
+        height: 75px;
+    }
+    #headerLogo>a>img {
+        width: auto;
+        max-height: 75px;
+        margin: 0;
+        padding: 2px;
+    }
+    #headerNav>a{
+        font-size: 14px;
+        margin: auto;
+    }
+    #headerSearch::placeholder{
+        font-size: 10px;
+    }
+
+    #dropdown-content{
+        display: none;
+    }
+    
+    /* paratgraph elements - text */
+    p{
+        font-size: 14px;
+        padding: 1% 0 ;
+    }
+
+    /* ---------- Trip ---------- */
+    #tripContainer>section{
+        display: flex;
+        flex-direction: column;
+    }
+    #tripContainer>section>div{
+        display: flex;
+        flex-direction: column;
+    }
+    #tripContainer>section>div>figure>img{
+        width: 100%;
+        height: auto;
+        margin: 2px;
+    }
+
+    /* ---------- Contact ---------- */
+    label{
+        display: none;
+    }
+    #formContainer{
+        width: 80%;
+        border: none;
+        border-radius: 0;
+    }
+
+    /* ---------- Detail 1-6 : basic layout ----------  */
+    .kr-mainTripContainer>section{
+        flex-direction: column;
+    }
+    .kr-mainTripContainer>section>article{
+        width: 100%;
+    }
+    #landmarkContainer{
+        flex-direction: column; 
+    }
+    .kr-imgDisplayNone,
+    #imgDisplayNoneOnPhone{
+        display: none;
+    }
+    #figureContainer{
+        min-width: 100%;
+        margin: auto;
+    }
+    #figureContainer img,
+    #list-container{
+        width: 100%;
+    }
+    #list-container{
+        padding-left: 2%;
+    }
+    #landmarkContainer>article>ul>li{
+        font-size: 14px;
+    }
+    .kr-table-design{
+        font-size: 14px;
+    }
+    #commentform{
+        text-align: center;
+    }
+    #commentform>textarea{
+        width: 90%;
+        margin-top: 10px;
+    }
+    #commentform>button{
+        height: fit-content;
+        width: 50%;
+        min-height: 30px;
+    }
+}
+
+/* 2. tablet */
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    h1{
+        font-size: 55px;
+    }
+    header{
+        max-height: 100px;
+    }
+    #headerLogo>a>img {
+        width: 100px;
+        height: 100px;
+    }
+    #headerNav>a{
+        font-size: 20px;
+        margin: auto;
+    }
+    #dropdown-content{
+        display: none;
+    }
+
+    /* paratgraph elements - text */
+    p{
+        font-size: 16px;
+        padding: 1% 0 ;
+    }
+
+    /* ---------- Trip ---------- */
+    #tripContainer>section{
+        display: flex;
+        flex-direction: column;
+    }
+    #tripContainer>section>div{
+        display: flex;
+        flex-direction: column;
+    }
+    #tripContainer>section>div>figure>img{
+        max-width: 400px;
+    }
+
+    /* ---------- Contact ---------- */
+    label{
+        display: none;
+    }
+    #formContainer{
+        width: 70%;
+        border: none;
+        border-radius: 0;
+    }
+    
+    /* ---------- Detail 1-6 : basic layout ----------  */
+    #landmarkContainer{
+        flex-direction: column; 
+    }
+    .kr-imgDisplayNone{
+        display: none;
+    }
+    #figureContainer{
+        min-width: 100%;
+        margin: auto;
+    }
+    #list-container{
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+    #landmarkContainer>article>ul>li{
+        font-size: 16px;
+    }
+    .kr-table-design{
+        font-size: 16px;
+    }
+}
+
+/* 3. pc */
+@media screen and (min-width: 1025px){
+    h1{
+        font-size: 55px;
+        width: auto;
+    }
+    header{
+        max-height: 100px;
+    }
+    p{
+        padding: 1% 0 1% 3%;
+    }
+    #headerLogo{
+        width: auto;
+        text-align: center;
+    }
+    #headerLogo>a>img {
+        width: 100px;
+        height: 100px ;
+    }
+    #headerNav{
+        margin: auto 0 0 0;
+        width: 50%;
+        height: 50%;
+        padding: 0 ;
+        display: inline;
+    }
+    #headerNav>a{
+        margin: auto 0 0 0;
+        padding: 1% 5%;
+        font-size: 25px;
+        width: fit-content;
+    }
+    #headerNav>a:hover{
+        background-color: #03396c;
+        border-radius: 2px;
+    }
+    #headerSearch{
+        width: 6%;
+    }
+    
+    /* ------ layout change ----- */
+    #sfeerbeeld, main, footer{
+        width: 70%;
+        margin: auto;
+    }
+    #tripBesschrijving, #sectionOverMij{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    #beschrijving>p{
+        flex-grow: 2;
+        flex-direction: column;
+    }
+    #imagesTripBeschrijving{
+        width: max-content;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: auto;
+        justify-content: space-around;
+    }
+    #imagesTripBeschrijving>img{
+        width: fit-content;
+        max-width: 400px;
+        height: auto;
+        margin: 1px;
+    }
+    #creatorImg{
+        width: fit-content;
+    }
+
+    /* ---------- Trip ---------- */
+    #tripContainer>section>div>figure{
+        flex-grow: 1;
+    }
+    #tripContainer>section>div>article{
+        flex-grow: 2;
+    }
+    #tripContainer>section:nth-child(odd)>div>article{
+        order: -1;
+    }
+    #tripContainer>section>div>figure>img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* ---------- Contact ---------- */
+    #formContainer{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+        'contact comment'
+        'submit  submit';
+        grid-gap: 1rem;
+    }
+    #contact_details>label{
+        grid-area: labels;
+        width: 50%;
+    }
+    #contact_details>div>input{
+        grid-area: contact;
+        width: 100%;
+        height: 1.2rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    #submitFormButton{
+        grid-area: submit;
+        width: 100%;
+    }
+    #contact_details>div>select{
+        width: 100%;
+        height: 2.5rem;
+        padding: .3rem;
+        margin-bottom: 1rem;
+    }
+    #contact_details>div>select>option{
+        font-size: 1.2rem;
+        padding: 5px 3px;
+    }
+    #contact_details>input[type="submit"]{
+        padding: 10px;
+        text-align: center;
+        border: none;
+    }
+    #comment{
+        grid-area: comment;
+    }
+    #comment>textarea{
+        height: 85%;
+    }
+    
+    /* ---------- Detail 1-6 : basic layout ----------  */
+    #landmarkContainer>article>ul>li{
+        font-size: 16px;
+    }
+    .kr-table-design{
+        font-size: 16px;
+    }
+    
+}
+
+/* screen bigger than 1800px */
+@media screen and (min-width: 1800px){
+    #imagesTripBeschrijving>img{
+        width: fit-content;
+        max-width: 500px;
+        height: auto;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
